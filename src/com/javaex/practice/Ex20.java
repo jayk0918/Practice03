@@ -21,29 +21,30 @@ public class Ex20 {
 		System.out.println("======================");
 		
 		System.out.print(">>");
+		while(true) {
 		int guess = sc.nextInt();
 		
-		while(true) {
-			if(guess>answer) {
-				System.out.println("더 낮게");
-				break;
-			}else if(guess<answer) {
-				System.out.println("더 높게");
-				break;
-			}else{
-				System.out.println("맞았습니다.");
-				break;
-			}
-		}
-		
-		System.out.print("게임을 종료하시겠습니까?(y/n) >>");
-		String retry = sc.nextLine();
-		if(retry.equals(n)){
+		if(guess>answer) {
+			System.out.println("더 낮게");
+		}else if(guess<answer) {
+			System.out.println("더 높게");
+		}else{
+			System.out.println("맞았습니다.");
 			break;
 		}
-		
-		
-		sc.close();
 		}
+		System.out.print("게임을 종료하시겠습니까?(y/n) >>");
+		String retry = sc.nextLine();
+		if(retry == "y"){
+			System.out.println("======================");
+			System.out.println("   [숫자맞추기게임 종료]   ");
+			System.out.println("======================");
+			break;
+		}else {
+		}
+		sc.close();
 	}
+		
+	}
+
 }
