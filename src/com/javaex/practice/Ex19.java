@@ -14,6 +14,11 @@ public class Ex19 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		int deposit = 0;
+		int withdraw = 0;
+		int balance = 0;
+		
+		
 		while(true) {
 			System.out.println("------------------------------");
 			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
@@ -21,13 +26,16 @@ public class Ex19 {
 			System.out.print("선택>");
 			int choice = sc.nextInt();
 			
-			
 			if(choice == 1) {
-				int deposit = sc.nextInt();
+				System.out.print("예금액>");
+				deposit = sc.nextInt();
+				balance += deposit;
 			}else if(choice == 2) {
-				int withdraw = sc.nextInt();
+				System.out.print("출금액>");
+				withdraw = sc.nextInt();
+				balance -= withdraw;
 			}else if(choice == 3) {
-				System.out.println(deposit - withdraw);
+				System.out.println("잔고액>" + balance);
 			}else if(choice == 4) {
 				System.out.println("프로그램 종료");
 				break;

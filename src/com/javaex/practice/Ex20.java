@@ -35,16 +35,16 @@ public class Ex20 {
 		}
 		System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 		String retry = sc.nextLine();
-		if(retry == "y"){
+		String yes = "y";
+		if(retry.equals(yes)){
 			System.out.println("======================");
 			System.out.println("   [숫자맞추기게임 종료]   ");
 			System.out.println("======================");
 			break;
 		}else {
 		}
-		sc.close();
 	}
-		
+		sc.close();
 	}
 
 }
