@@ -33,7 +33,7 @@ public class Ex20 {
 				}
 			} // guess while문 종료
 			
-			System.out.println("게임을 종료하시겠습니까?(y/n) >>");
+			System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 			char retry = sc.next().charAt(0);
 			if(retry == 'y'){
 				System.out.println("================");
