@@ -14,6 +14,7 @@ public class Ex20 {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
+		System.out.println("답안입력");
 		int answer = sc.nextInt();
 		
 		System.out.println("======================");
@@ -33,23 +34,18 @@ public class Ex20 {
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				String retry = sc.nextLine();
 				sc.nextLine();
-				String yes = "y";
-				String no = "n";
-				if(retry.equals(no)){
+				if(retry == "y"){
 					System.out.println("======================");
 					System.out.println("   [숫자맞추기게임 종료]   ");
 					System.out.println("======================");
 					break;
-				}else if(retry.equals(yes)){
+				}else if(retry == "n"){
 					
-				}else {
-					System.out.println("다시 입력해주세요");
 				}
 			}
 		}
-		
-	}
 		sc.close();
+		}
 	}
 	
 }
