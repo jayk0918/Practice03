@@ -2,7 +2,7 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex10 {
+public class Ex10_1 {
 
 	public static void main(String[] args) {
 		// 정수 5개를 입력, 가장 큰 수를 출력(도출)
