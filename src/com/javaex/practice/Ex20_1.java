@@ -2,7 +2,7 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex20 {
+public class Ex20_1 {
 
 	public static void main(String[] args) {
 		// 숨겨진 숫자를 맞추는 게임
